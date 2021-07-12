@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="14" errors="0" failures="0" tests="15" time="13.976">
- <testsuite name="Home" timestamp="2021-07-11T17:31:04" hostname="localhost" time="13.954" errors="0" tests="8" skipped="0" disabled="7" failures="0">
-  <testcase classname="Home" name="Verify &apos;Browse Job by Sector&apos; Section" time="13.814" />
+<testsuites disabled="14" errors="0" failures="1" tests="15" time="20.661">
+ <testsuite name="FindAJob" timestamp="2021-07-12T08:20:08" hostname="localhost" time="20.627" errors="0" tests="2" skipped="0" disabled="1" failures="1">
+  <testcase classname="FindAJob" name=" Click &apos;Find a Job tab and verify page " time="20.492">
+   <failure type="toContain" message="Expected &apos;Found 60 jobs&apos; to contain &apos;jobss&apos;."><![CDATA[Error: Failed expectation
+    at C:\softwares\Protractor Project\Economist_JobPortal\pageObjects\Common_PO.js:30:33
+    at C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\built\element.js:804:32
+    at ManagedPromise.invokeCallback_ (C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+    at TaskQueue.execute_ (C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+    at TaskQueue.executeNext_ (C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+    at C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27
+    at C:\Users\Hemlata\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:668:7
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)]]>
+   </failure>
+  </testcase>
+  <testcase classname="FindAJob" name=" Search for Job and verify searched Job on &apos;Find a Job&apos; page " time="0.004">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="Home" timestamp="2021-07-12T08:20:28" hostname="localhost" time="0.014" errors="0" tests="8" skipped="0" disabled="8" failures="0">
   <testcase classname="Home" name="Launch Economist Job Portal check page logo " time="0.001">
    <skipped />
   </testcase>
   <testcase classname="Home" name="Click SignIn and navigate to signIn Page" time="0.001">
    <skipped />
   </testcase>
-  <testcase classname="Home" name="Click Create Account and navigate to Create Account page" time="0.001">
+  <testcase classname="Home" name="Click Create Account and navigate to Create Account page" time="0">
    <skipped />
   </testcase>
   <testcase classname="Home" name="Search Job by valid designation and verify search result" time="0.001">
@@ -17,39 +33,34 @@
   <testcase classname="Home" name="Search Job by invalid designation and verify search result" time="0.001">
    <skipped />
   </testcase>
-  <testcase classname="Home" name="navigate to all Job pages or tabs" time="0">
+  <testcase classname="Home" name="navigate to all Job pages or tabs" time="0.001">
+   <skipped />
+  </testcase>
+  <testcase classname="Home" name="Verify &apos;Browse Job by Sector&apos; Section" time="0.006">
    <skipped />
   </testcase>
   <testcase classname="Home" name="Click and verify page of &apos;Browse job  by Sector&apos; " time="0">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="FindAJob" timestamp="2021-07-11T17:31:18" hostname="localhost" time="0.009" errors="0" tests="2" skipped="0" disabled="2" failures="0">
-  <testcase classname="FindAJob" name=" Click &apos;Find a Job tab and verify page " time="0.007">
-   <skipped />
-  </testcase>
-  <testcase classname="FindAJob" name=" Search for Job and verify searched Job on &apos;Find a Job&apos; page " time="0">
+ <testsuite name="Job Alerts" timestamp="2021-07-12T08:20:28" hostname="localhost" time="0.001" errors="0" tests="1" skipped="0" disabled="1" failures="0">
+  <testcase classname="Job Alerts" name=" click Job Alerts tab and verify successful navigation" time="0.001">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Job Alerts" timestamp="2021-07-11T17:31:18" hostname="localhost" time="0.002" errors="0" tests="1" skipped="0" disabled="1" failures="0">
-  <testcase classname="Job Alerts" name=" click Job Alerts tab and verify successful navigation" time="0">
+ <testsuite name="Jobs Blog" timestamp="2021-07-12T08:20:28" hostname="localhost" time="0.001" errors="0" tests="1" skipped="0" disabled="1" failures="0">
+  <testcase classname="Jobs Blog" name=" click and verify page of &apos;Jobs Blog&apos; tab" time="0.001">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Jobs Blog" timestamp="2021-07-11T17:31:18" hostname="localhost" time="0.002" errors="0" tests="1" skipped="0" disabled="1" failures="0">
-  <testcase classname="Jobs Blog" name=" click and verify page of &apos;Jobs Blog&apos; tab" time="0">
-   <skipped />
-  </testcase>
- </testsuite>
- <testsuite name="Search Recruiters" timestamp="2021-07-11T17:31:18" hostname="localhost" time="0.009" errors="0" tests="3" skipped="0" disabled="3" failures="0">
-  <testcase classname="Search Recruiters" name=" click &apos;Search Recruiters&apos; tab and verify page" time="0.001">
+ <testsuite name="Search Recruiters" timestamp="2021-07-12T08:20:28" hostname="localhost" time="0.018" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+  <testcase classname="Search Recruiters" name=" click &apos;Search Recruiters&apos; tab and verify page" time="0">
    <skipped />
   </testcase>
   <testcase classname="Search Recruiters" name=" Search valid recruiter and verify search result" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Search Recruiters" name=" Search invalid recruiter and verify search result" time="0.001">
+  <testcase classname="Search Recruiters" name=" Search invalid recruiter and verify search result" time="0">
    <skipped />
   </testcase>
  </testsuite>
